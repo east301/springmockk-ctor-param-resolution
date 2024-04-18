@@ -27,6 +27,10 @@ java {
     sourceCompatibility = JavaVersion.VERSION_17
     withJavadocJar()
     withSourcesJar()
+
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
 }
 
 repositories {
